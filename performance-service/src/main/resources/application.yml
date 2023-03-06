@@ -1,0 +1,6 @@
+app:
+  name: Performance Service
+
+spring:
+  profiles:
+    active: local
