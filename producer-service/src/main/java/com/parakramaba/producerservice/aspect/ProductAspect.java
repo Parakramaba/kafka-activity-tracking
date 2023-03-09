@@ -31,7 +31,7 @@ public class ProductAspect {
 
         final String methodName = proceedingJoinPoint.getSignature().getName();
         final Long executionTime = stopWatch.getTotalTimeMillis();
-        productProducer.putActivityToKafkaStream(serviceName, methodName, "Make a reservation", executionTime);
+        productProducer.putActivityToKafkaStream(serviceName, methodName, "Make a product", executionTime);
         return result;
     }
 }
