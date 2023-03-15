@@ -19,7 +19,7 @@ public class ProductConsumer {
     private UserActivityRepository userActivityRepository;
 
     @KafkaListener(topics = topicCreateProduct, groupId = "${spring.kafka.consumer.group-id}")
-    public void saveUserActivity(@Payload UserActivityDto userActivityDto) {
+    public void saveUserActivity(UserActivityDto userActivityDto) {
 
         UserActivity userActivity = new UserActivity();
         String userActivityId = UUID.randomUUID().toString();

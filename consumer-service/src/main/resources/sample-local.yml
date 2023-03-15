@@ -33,4 +33,3 @@ spring:
               mapping: activityDto:com.parakramaba.consumerservice.dto.UserActivityDto
             trusted:
               packages: "*"
-

@@ -1,5 +1,5 @@
 app:
-  name: Consumer Service
+  name: consumer-service
 
 spring:
   datasource:

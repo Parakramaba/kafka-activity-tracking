@@ -1,5 +1,5 @@
 app:
-  name: Producer Service
+  name: producer-service
 
 spring:
   datasource:
