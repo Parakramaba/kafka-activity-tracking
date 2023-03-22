@@ -32,4 +32,4 @@ spring:
             type:
               mapping: activityDto:com.parakramaba.consumerservice.dto.UserActivityDto
             trusted:
-              packages: "*"
+              packages: "com.parakramaba.producerservice.dto.UserActivityDto"

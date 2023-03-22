@@ -17,8 +17,6 @@ public class PerformanceService {
 
     private ThreadLocalRandom threadLocalRandom = ThreadLocalRandom.current();
 
-    private final StopWatch stopWatch = new StopWatch();
-
     public String testKafkaPerformance(final int noOfCalls) {
 
         List<ProductDetailsDto> products = IntStream
@@ -26,6 +24,7 @@ public class PerformanceService {
                 .mapToObj(i -> new ProductDetailsDto("Product " + i, "Brand " + i
                         , threadLocalRandom.nextLong(5, 1000)))
                 .collect(Collectors.toList());
+        StopWatch stopWatch = new StopWatch();
         stopWatch.start();
         for (ProductDetailsDto product
                 : products) {
